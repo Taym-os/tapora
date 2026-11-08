@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050a13">
+<title>Tapora | Tap. Connect. Grow.</title>
+<meta name="description" content="Tapora smart NFC Google Review and Instagram cards. Make it easier for customers to connect with your business.">
+<style>
+:root{--bg:#050912;--panel:#0c1422;--panel2:#101d30;--text:#f5f8ff;--muted:#aab7ca;--blue:#168bff;--cyan:#25d8ff;--line:rgba(150,190,255,.16);--glow:0 0 45px rgba(20,143,255,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#0a2850 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 42px));margin:auto}
+header{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-size:25px;font-weight:900;letter-spacing:-1.3px}.brand img{width:150px;height:58px;object-fit:contain;border-radius:8px}.brand span{background:linear-gradient(90deg,#fff,#26baff);color:transparent;background-clip:text}
+.nav{display:flex;gap:28px;color:#c0cde0;font-size:14px}.right{display:flex;gap:12px;align-items:center}
+button,.btn{border:0;cursor:pointer;border-radius:999px;padding:13px 19px;font-weight:800;font-size:14px;display:inline-flex;align-items:center;justify-content:center;transition:.2s}
+.btn{background:linear-gradient(100deg,var(--blue),var(--cyan));color:white;box-shadow:0 8px 28px #078dff35}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+.btn.ghost,.lang{background:transparent;border:1px solid var(--line);color:white;box-shadow:none}.lang{padding:10px 14px}
+.hero{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center;padding:78px 0 82px;min-height:610px}
+.kicker{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:2.8px;text-transform:uppercase}
+h1{font-size:clamp(48px,6vw,78px);line-height:.98;letter-spacing:-4px;margin:20px 0 22px;max-width:650px}
+.grad{background:linear-gradient(90deg,#fff 5%,#36c5ff 65%,#167fff);color:transparent;background-clip:text}
+.lead{font-size:17px;line-height:1.8;color:var(--muted);max-width:540px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.note{font-size:12px;color:#8498b5;margin-top:17px}
+.hero-art{position:relative}.hero-art:before{content:"";position:absolute;inset:12% 8%;background:#078dff35;filter:blur(75px);border-radius:50%}
+.hero-art img{position:relative;width:100%;max-height:520px;object-fit:contain;border-radius:28px;box-shadow:var(--glow);border:1px solid var(--line)}
+.pill{position:absolute;bottom:20px;left:-18px;background:#091323eF;border:1px solid #1d8fff55;border-radius:14px;padding:13px 17px;font-size:13px;box-shadow:var(--glow)}
+.section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}
+h2{font-size:clamp(32px,4vw,48px);letter-spacing:-2px;margin:12px 0}.muted{color:var(--muted);line-height:1.75;max-width:520px}
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.product{background:linear-gradient(150deg,#101d30,#09111e);border:1px solid var(--line);border-radius:24px;padding:18px;overflow:hidden}
+.product img{width:100%;height:340px;object-fit:cover;border-radius:16px;background:#0b1422}.product-info{padding:20px 7px 7px}.product h3{font-size:23px;margin:0 0 9px}.product p{color:var(--muted);line-height:1.7;margin:0 0 16px}.price{color:#66d5ff;font-weight:900;font-size:15px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.benefit{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:20px}.icon{font-size:25px}.benefit h3{margin:15px 0 8px}.benefit p{color:var(--muted);line-height:1.7;font-size:14px;margin:0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{background:linear-gradient(150deg,#0f1b2c,#0a111d);border:1px solid var(--line);padding:25px;border-radius:20px}.number{font-size:12px;color:var(--cyan);font-weight:900;letter-spacing:2px}.step h3{margin:16px 0 8px}.step p{color:var(--muted);line-height:1.7;font-size:14px;margin:0}
+.compat{border:1px solid #168bff50;background:linear-gradient(120deg,#0b1b31,#0b1320);border-radius:25px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center;box-shadow:var(--glow)}
+.compat h2{margin-top:0}.device-list{display:flex;gap:10px;flex-wrap:wrap}.device{padding:11px 15px;border:1px solid var(--line);background:#08101c;border-radius:12px;color:#dceaff;font-size:13px}
+.callout{padding:48px;border-radius:28px;background:linear-gradient(110deg,#0874e8,#13bde8);display:flex;justify-content:space-between;align-items:center;gap:25px;color:white}.callout h2{margin:0;max-width:650px}.callout .btn{background:#fff;color:#071322;box-shadow:none;white-space:nowrap}
+footer{padding:30px 0 42px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;color:#8fa1bb;font-size:13px}
+[dir=rtl] body{text-align:right}[dir=rtl] .hero,[dir=rtl] .section-head,[dir=rtl] .compat,[dir=rtl] .callout,[dir=rtl] footer{direction:rtl}[dir=rtl] .pill{left:auto;right:-18px}
+@media(max-width:780px){.nav{display:none}.hero{grid-template-columns:1fr;padding:55px 0;gap:32px}.hero-art img{max-height:440px}h1{letter-spacing:-2.5px}.section{padding:55px 0}.section-head{display:block}.products,.benefits,.steps,.compat{grid-template-columns:1fr}.product img{height:300px}.callout{display:block;padding:30px}.callout .btn{margin-top:22px}footer{display:block}footer span{display:block;margin-top:10px}}
+</style></head>
+<body><div class="wrap">
+<header>
+<a class="brand" href="#"><img src="tapora-logo.jpeg" alt="Tapora logo"></a>
+<nav class="nav"><a href="#products" data-en="Products" data-ar="المنتجات">Products</a><a href="#benefits" data-en="Why Tapora" data-ar="لماذا Tapora؟">Why Tapora</a><a href="#how" data-en="How it works" data-ar="كيف تعمل؟">How it works</a><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></nav>
+<div class="right"><button class="lang" id="lang">عربي</button><a class="btn" href="#contact" data-en="Order now" data-ar="اطلب الآن">Order now</a></div>
+</header>
+<main>
+<section class="hero">
+<div><div class="kicker" data-en="SMART NFC CARDS · JORDAN" data-ar="كروت NFC الذكية · الأردن">SMART NFC CARDS · JORDAN</div>
+<h1 data-en-html="Make every tap <span class='grad'>count.</span>" data-ar-html="اجعل لكل لمسة <span class='grad'>قيمة.</span>">Make every tap <span class="grad">count.</span></h1>
+<p class="lead" data-en="Turn a simple tap into a stronger connection. Tapora cards help customers reach your Google review page or Instagram profile in seconds — no app download needed." data-ar="حوّل اللمسة البسيطة إلى تواصل أقوى. تساعد كروت Tapora عملاءك في الوصول إلى صفحة تقييم Google أو حساب Instagram خلال ثوانٍ، دون الحاجة إلى تحميل تطبيق.">Turn a simple tap into a stronger connection. Tapora cards help customers reach your Google review page or Instagram profile in seconds — no app download needed.</p>
+<div class="actions"><a class="btn" href="#products" data-en="Explore our cards ↗" data-ar="اكتشف كروتنا ↗">Explore our cards ↗</a><a class="btn ghost" href="https://www.instagram.com/tapora_jo/" target="_blank" rel="noopener">Instagram ↗</a></div>
+<div class="note" data-en="NFC tap + QR backup · Simple setup · Designed for businesses" data-ar="تقنية NFC + رمز QR احتياطي · سهلة الاستخدام · مصممة للأعمال">NFC tap + QR backup · Simple setup · Designed for businesses</div>
+</div>
+<div class="hero-art"><img src="google-review-blue.jpeg" alt="Tapora Google Review NFC card in blue"><div class="pill" data-en="Your next customer connection starts here." data-ar="تواصلك القادم مع العملاء يبدأ من هنا.">Your next customer connection starts here.</div></div>
+</section>
+<section class="section" id="products">
+<div class="section-head"><div><div class="kicker" data-en="MEET YOUR NEW BUSINESS TOOL" data-ar="تعرّف على أداتك الجديدة للأعمال">MEET YOUR NEW BUSINESS TOOL</div><h2 data-en="Choose your Tapora card." data-ar="اختر كرت Tapora المناسب.">Choose your Tapora card.</h2></div><p class="muted" data-en="A clean, simple way to help people find and interact with your business online." data-ar="طريقة سهلة وأنيقة لمساعدة العملاء في العثور على نشاطك التجاري والتفاعل معه عبر الإنترنت.">A clean, simple way to help people find and interact with your business online.</p></div>
+<div class="products">
+<article class="product"><img src="google-review-black.jpeg" alt="Black Tapora Google Review card"><div class="product-info"><h3 data-en="Google Review Card" data-ar="كرت تقييم Google">Google Review Card</h3><p data-en="Make leaving a review easy. Customers tap their phone or scan the QR code to open your Google review link." data-ar="اجعل ترك التقييم أسهل. يقرّب العميل هاتفه من الكرت أو يمسح رمز QR لفتح رابط تقييم نشاطك على Google.">Make leaving a review easy. Customers tap their phone or scan the QR code to open your Google review link.</p><div class="price" data-en="1 card: 8 JOD · 2 cards: 15 JOD" data-ar="كرت واحد: ٨ دنانير · كرتان: ١٥ دينار">1 card: 8 JOD · 2 cards: 15 JOD</div></div></article>
+<article class="product"><img src="instagram-card.jpeg" alt="Tapora Instagram NFC card"><div class="product-info"><h3 data-en="Instagram Follow Card" data-ar="كرت متابعة Instagram">Instagram Follow Card</h3><p data-en="Let customers find your Instagram profile with one tap. The QR code gives them another quick way to open your page." data-ar="امنح عملاءك طريقة سهلة للوصول إلى حسابك على Instagram بلمسة واحدة، مع رمز QR كخيار إضافي.">Let customers find your Instagram profile with one tap. The QR code gives them another quick way to open your page.</p><div class="price" data-en="1 card: 8 JOD · 2 cards: 15 JOD" data-ar="كرت واحد: ٨ دنانير · كرتان: ١٥ دينار">1 card: 8 JOD · 2 cards: 15 JOD</div></div></article>
+<article class="product"><img src="google-review-stand.jpeg" alt="Tapora Google Review NFC stand displayed on a counter"><div class="product-info"><h3 data-en="Google Review Stand" data-ar="ستاند تقييم Google">Google Review Stand</h3><p data-en="A countertop display that makes it easy for customers to tap or scan and open your Google review page while they're at your business." data-ar="ستاند مكتبي يسهّل على العملاء تقريب الهاتف أو مسح رمز QR لفتح صفحة تقييم Google أثناء وجودهم في نشاطك التجاري.">A countertop display that makes it easy for customers to tap or scan and open your Google review page while they're at your business.</p><div class="price" data-en="Contact us for stand pricing" data-ar="تواصل معنا لمعرفة سعر الستاند">Contact us for stand pricing</div></div></article>
+</div>
+</section>
+<section class="section" id="benefits">
+<div class="section-head"><div><div class="kicker" data-en="WHY BUSINESSES CHOOSE TAPORA" data-ar="لماذا تختار الشركات Tapora؟">WHY BUSINESSES CHOOSE TAPORA</div><h2 data-en="Make it easier to be found." data-ar="سهّل على العملاء الوصول إليك.">Make it easier to be found.</h2></div><p class="muted" data-en="A smoother customer experience can help turn more happy interactions into online engagement." data-ar="تجربة أسهل للعملاء قد تساعد في تحويل المزيد من التجارب الإيجابية إلى تفاعل عبر الإنترنت.">A smoother customer experience can help turn more happy interactions into online engagement.</p></div>
+<div class="benefits">
+<div class="benefit"><div class="icon">⭐</div><h3 data-en="More review opportunities" data-ar="فرص أكثر للتقييم">More review opportunities</h3><p data-en="When customers can open your review page quickly, it removes friction and makes it easier for willing customers to leave feedback." data-ar="عندما يصل العميل إلى صفحة التقييم بسرعة، تقل الخطوات ويصبح ترك الملاحظات أسهل للعملاء الراغبين بذلك.">When customers can open your review page quickly, it removes friction and makes it easier for willing customers to leave feedback.</p></div>
+<div class="benefit"><div class="icon">📈</div><h3 data-en="Build trust over time" data-ar="ابنِ الثقة مع الوقت">Build trust over time</h3><p data-en="Authentic customer reviews can help potential customers understand your service and feel more confident choosing your business." data-ar="تساعد تقييمات العملاء الحقيقية العملاء الجدد على فهم خدمتك والشعور بثقة أكبر عند اختيار نشاطك التجاري.">Authentic customer reviews can help potential customers understand your service and feel more confident choosing your business.</p></div>
+<div class="benefit"><div class="icon">📲</div><h3 data-en="Simple for customers" data-ar="سهولة لعملائك">Simple for customers</h3><p data-en="No app to install. Use NFC on a compatible phone or scan the QR code with a camera." data-ar="لا حاجة لتحميل تطبيق. استخدم NFC على هاتف متوافق أو امسح رمز QR بالكاميرا.">No app to install. Use NFC on a compatible phone or scan the QR code with a camera.</p></div>
+</div>
+</section>
+<section class="section" id="how">
+<div class="section-head"><div><div class="kicker" data-en="THREE SIMPLE STEPS" data-ar="ثلاث خطوات بسيطة">THREE SIMPLE STEPS</div><h2 data-en="Tap. Open. Connect." data-ar="قرّب. افتح. تواصل.">Tap. Open. Connect.</h2></div><p class="muted" data-en="The experience is designed to be quick and easy for your customers." data-ar="صُممت التجربة لتكون سريعة وسهلة لعملائك.">The experience is designed to be quick and easy for your customers.</p></div>
+<div class="steps">
+<div class="step"><div class="number">01 / TAP</div><h3 data-en="Tap your phone" data-ar="قرّب هاتفك">Tap your phone</h3><p data-en="Bring an NFC-compatible smartphone close to the Tapora card." data-ar="قرّب هاتفاً ذكياً يدعم NFC من كرت Tapora.">Bring an NFC-compatible smartphone close to the Tapora card.</p></div>
+<div class="step"><div class="number">02 / OPEN</div><h3 data-en="Your link opens" data-ar="يفتح الرابط">Your link opens</h3><p data-en="The phone opens the business link. No special app is required." data-ar="يفتح الهاتف رابط نشاطك التجاري دون الحاجة إلى تطبيق خاص.">The phone opens the business link. No special app is required.</p></div>
+<div class="step"><div class="number">03 / CONNECT</div><h3 data-en="Review or follow" data-ar="قيّم أو تابع">Review or follow</h3><p data-en="Customers can leave feedback on Google or visit your Instagram profile." data-ar="يمكن للعملاء ترك تقييم على Google أو زيارة حسابك على Instagram.">Customers can leave feedback on Google or visit your Instagram profile.</p></div>
+</div>
+</section>
+<section class="section"><div class="compat"><div><div class="kicker" data-en="MADE FOR EVERYDAY PHONES" data-ar="مصممة للهواتف اليومية">MADE FOR EVERYDAY PHONES</div><h2 data-en="NFC when available. QR whenever you need." data-ar="NFC عند توفره، وQR كخيار بديل.">NFC when available. QR whenever you need.</h2><p class="muted" data-en="Tapora works with NFC-compatible iPhone and Android phones. If NFC is unavailable or turned off, customers can scan the printed QR code using their phone camera. Exact NFC behavior can vary by device and settings." data-ar="تعمل Tapora مع هواتف iPhone وAndroid المتوافقة مع NFC. وإذا لم تتوفر تقنية NFC أو كانت مغلقة، يمكن للعملاء مسح رمز QR المطبوع باستخدام كاميرا الهاتف. قد تختلف طريقة عمل NFC حسب الجهاز والإعدادات.">Tapora works with NFC-compatible iPhone and Android phones. If NFC is unavailable or turned off, customers can scan the printed QR code using their phone camera. Exact NFC behavior can vary by device and settings.</p></div><div class="device-list"><span class="device">iPhone</span><span class="device">Samsung Galaxy</span><span class="device">Google Pixel</span><span class="device">Android phones</span><span class="device">QR camera scan</span></div></div></section>
+<section class="section" id="contact"><div class="callout"><h2 data-en="Ready to make every customer interaction count?" data-ar="جاهز تجعل كل تفاعل مع عملائك له قيمة؟">Ready to make every customer interaction count?</h2><a class="btn" href="https://wa.me/962790842707?text=Hi%20Tapora!%20I%27d%20like%20to%20order%20an%20NFC%20card." target="_blank" rel="noopener" data-en="Order on WhatsApp ↗" data-ar="اطلب عبر WhatsApp ↗">Order on WhatsApp ↗</a></div>
+<div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:25px"><a class="btn ghost" href="https://wa.me/962790842707" target="_blank" rel="noopener">WhatsApp: 079 084 2707</a><a class="btn ghost" href="https://www.instagram.com/tapora_jo/" target="_blank" rel="noopener">@tapora_jo on Instagram ↗</a></div></section>
+</main>
+<footer><a class="brand" href="#"><span>Tapora.</span></a><span data-en="© 2026 Tapora · Tap. Connect. Grow." data-ar="© 2026 Tapora · قرّب. تواصل. انطلق.">© 2026 Tapora · Tap. Connect. Grow.</span><span>Jordan 🇯🇴</span></footer>
+</div>
+<script>
+let lang="en";
+document.getElementById("lang").addEventListener("click",()=>{
+ lang=lang==="en"?"ar":"en";
+ document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ document.getElementById("lang").textContent=lang==="en"?"عربي":"English";
+ document.querySelectorAll("[data-en]").forEach(e=>e.textContent=e.dataset[lang]);
+ document.querySelectorAll("[data-en-html]").forEach(e=>e.innerHTML=e.dataset[lang+"Html"]);
+});
+</script></body></html>
