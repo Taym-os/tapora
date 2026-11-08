@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tapora | Smart NFC Cards</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+ background:#07111f;color:white;
+ font-family:Arial,sans-serif;
+ line-height:1.7;
+}
+header{
+ display:flex;justify-content:space-between;
+ align-items:center;padding:20px 8%;
+ border-bottom:1px solid #19304b;
+}
+.logo{font-size:30px;font-weight:900;color:#38baff}
+nav a{color:white;text-decoration:none;margin:12px}
+button,.btn{
+ background:linear-gradient(90deg,#087cff,#20caff);
+ color:white;padding:12px 22px;border:0;
+ border-radius:30px;text-decoration:none;
+ font-weight:bold;cursor:pointer;
+}
+.hero{
+ padding:100px 8%;display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:40px;align-items:center;
+}
+h1{font-size:58px;line-height:1.1}
+.blue{color:#25baff}
+p{color:#b5c6dc;margin:20px 0}
+.hero img{width:100%;border-radius:20px}
+section{padding:75px 8%}
+h2{font-size:38px;margin-bottom:25px}
+.products{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:22px;
+}
+.card{
+ background:#101e31;padding:18px;
+ border:1px solid #234264;border-radius:18px;
+}
+.card img{
+ width:100%;height:250px;
+ object-fit:cover;border-radius:12px;
+}
+.card h3{margin-top:15px}
+.price{color:#39c5ff;font-weight:bold}
+.features{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:20px;
+}
+.feature{
+ background:#101e31;padding:25px;
+ border-radius:15px;border:1px solid #234264;
+}
+.contact{
+ text-align:center;
+ background:linear-gradient(120deg,#0756b5,#087fbd);
+ border-radius:25px;padding:55px 20px;
+}
+footer{text-align:center;padding:35px;color:#8fa6c1}
+.lang{background:#142c48;border:1px solid #3a8bd0}
+@media(max-width:750px){
+ .hero{grid-template-columns:1fr;padding:60px 6%}
+ h1{font-size:43px}
+ .products,.features{grid-template-columns:1fr}
+ header{padding:15px 5%}
+ nav{display:none}
+ section{padding:55px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">TAPORA.</div>
+ <nav>
+  <a href="#products">Products</a>
+  <a href="#benefits">Benefits</a>
+  <a href="#how">How it works</a>
+  <a href="#contact">Contact</a>
+ </nav>
+ <button class="lang" onclick="toggleLanguage()">عربي</button>
+</header>
+
+<section class="hero">
+ <div>
+  <h1>Make Every Tap <span class="blue">Count.</span></h1>
+  <p>
+   Discover Tapora smart NFC cards.
+   Help your customers review your business
+   on Google or follow you on Instagram
+   with just one tap.
+  </p>
+  <a class="btn" href="#products">Explore Products</a>
+  <p>No app required · NFC + QR Code</p>
+ </div>
+ <img src="assets/google-review-blue.jpeg"
+      alt="Tapora Google Review Card">
+</section>
+
+<section id="products">
+ <h2>Our <span class="blue">Products</span></h2>
+ <div class="products">
+
+  <div class="card">
+   <img src="assets/google-review-black.jpeg"
+        alt="Google Review Card">
+   <h3>Google Review Card</h3>
+   <p>Make leaving a Google review easier.
+   Simply tap or scan the QR code.</p>
+   <div class="price">1 for 8 JOD · 2 for 15 JOD</div>
+  </div>
+
+  <div class="card">
+   <img src="assets/instagram-card.jpeg"
+        alt="Instagram NFC Card">
+   <h3>Instagram Card</h3>
+   <p>Let customers discover and follow
+   your Instagram profile instantly.</p>
+   <div class="price">Contact us for pricing</div>
+  </div>
+
+  <div class="card">
+   <img src="assets/google-review-stand.jpeg"
+        alt="Google Review Stand">
+   <h3>Google Review Stand</h3>
+   <p>A professional countertop display
+   for your business. Customers can
+   tap or scan to leave a review.</p>
+   <div class="price">Contact us for pricing</div>
+  </div>
+
+ </div>
+</section>
+
+<section id="benefits">
+ <h2>Why Choose <span class="blue">Tapora?</span></h2>
+ <div class="features">
+  <div class="feature">
+   <h3>⭐ More Reviews</h3>
+   <p>Make it easier for happy customers
+   to leave genuine feedback.</p>
+  </div>
+  <div class="feature">
+   <h3>📈 Build Trust</h3>
+   <p>Authentic customer reviews help
+   potential customers trust your business.</p>
+  </div>
+  <div class="feature">
+   <h3>📱 Easy to Use</h3>
+   <p>No app installation needed.
+   NFC and QR code compatibility.</p>
+  </div>
+ </div>
+</section>
+
+<section id="how">
+ <h2>How Does It <span class="blue">Work?</span></h2>
+ <div class="features">
+  <div class="feature">
+   <h3>01. Tap</h3>
+   <p>Bring your compatible phone
+   close to the Tapora card.</p>
+  </div>
+  <div class="feature">
+   <h3>02. Open</h3>
+   <p>Your Google or Instagram
+   link opens automatically.</p>
+  </div>
+  <div class="feature">
+   <h3>03. Connect</h3>
+   <p>Leave a review or follow
+   the business!</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <h2>Works With Your <span class="blue">Devices</span></h2>
+ <p>
+  Tapora supports NFC-compatible iPhones
+  and Android smartphones, including Samsung
+  Galaxy and Google Pixel devices.
+  If NFC isn't available, simply scan the
+  printed QR code using your camera.
+ </p>
+</section>
+
+<section id="contact">
+ <div class="contact">
+  <h2>Ready to Grow Your Business?</h2>
+  <p>Get your Tapora smart card today!</p>
+  <a class="btn"
+  href="https://wa.me/962790842707">
+  Order on WhatsApp
+  </a>
+  <br><br>
+  <a class="btn"
+  href="https://www.instagram.com/tapora_jo/">
+  Follow us on Instagram
+  </a>
+ </div>
+</section>
+
+<footer>
+ TAPORA. © 2026 All Rights Reserved.
+ <br>Made in Jordan 🇯🇴
+</footer>
+
+<script>
+let arabic=false;
+
+function toggleLanguage(){
+ arabic=!arabic;
+ alert(arabic
+ ? "Arabic translation can be added to the full website next."
+ : "English selected");
+}
+</script>
+
+</body>
+</html>
